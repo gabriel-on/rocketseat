@@ -6,10 +6,28 @@
     padding: 0;
 }
 
+:root{
+    --text-color: white;
+    --bg-url: url(/discover/assets/bg-mobile.jpg);
+    --strong-color: rgba(255, 255, 255, 0.5);
+    --surface-color: #5e5e5e1e;
+    --surface-color-hover: rgba(0, 0, 0, 0.2);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+.light{
+    --text-color: black;
+    --bg-url: url(/discover/assets/bg-mobile-light.jpg);
+    --strong-color: rgb(0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(51, 50, 50, 0.2);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+}
+
 body{
-    background: url(/discover/assets/bg-mobile.jpg) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center/cover;
     font-family: 'Inter', sans-serif;
-    color: white;
+    color: var(--text-color);
 }
 
 #container{
@@ -44,10 +62,10 @@ ul li{
 }
 
 li a{
-    background-color: #5e5e5e49;
+    background-color: var(--surface-color);
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    color: white;
+    color: var(--text-color);
     display: flex;
     padding: 16px;
     font-weight: 500;
@@ -55,12 +73,12 @@ li a{
     text-decoration: none;
     margin: 8px auto;
     width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.623);
+    border: 1px solid var(--strong-color);
     transition: 0.3s;
 }
 
 li a:hover{
-    background-color: #5e5e5e1e;
+    background-color: var(--surface-color-hover);
     color: #5e5e5e;
     border: 1px solid #5e5e5e;
     transition: 0.3s;
@@ -74,7 +92,7 @@ li a:hover{
 }
 
 #socialmedia a{
-    color: white;
+    color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +102,7 @@ li a:hover{
 }
 
 #socialmedia a:hover{
-    background-color: #5e5e5e6b;
+    background-color: var(--highlight-color);
 }
 
 footer{
@@ -94,7 +112,7 @@ footer{
 }
 
 footer a{
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
