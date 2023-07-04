@@ -8,10 +8,8 @@
 
 body{
     background: url(/discover/assets/bg-mobile.jpg) no-repeat top center/cover;
-}
-
-img{
-    width: 100%;
+    font-family: 'Inter', sans-serif;
+    color: white;
 }
 
 #container{
@@ -20,7 +18,16 @@ img{
     margin: auto;
     border: 1px solid red;
 }
+.profile{
+}
 
-#profile img{
-    max-width: 10%;
+.profile p{
+    text-align: center;
+    font-weight: 500;
+}
+
+.profile img{
+    display: flex;
+    width: 112px;
+    margin: auto;
 }
