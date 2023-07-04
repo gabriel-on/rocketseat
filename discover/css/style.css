@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    background: url(/discover/assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+img{
+    width: 100%;
+}
+
+#container{
+    width: 360px;
+    height: 712px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+#profile img{
+    max-width: 10%;
+}
