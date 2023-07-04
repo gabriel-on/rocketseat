@@ -14,14 +14,16 @@ body{
 
 #container{
     width: 360px;
-    margin: auto;
-    border: 1px solid red;
+    margin: 56px auto 0px;
+    padding: 0px 24px;
 }
 
-/* .profile{
-} */
+.profile{
+    padding: 24px;
+}
 
 .profile p{
+    margin: 8px auto;
     text-align: center;
     font-weight: 500;
 }
@@ -30,4 +32,72 @@ body{
     display: flex;
     width: 112px;
     margin: auto;
+}
+
+ul{
+    list-style: none;
+    padding: 24px 0px;
+}
+
+ul li{
+    display: flex;
+}
+
+li a{
+    background-color: #5e5e5e49;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    padding: 16px;
+    font-weight: 500;
+    justify-content: center;
+    text-decoration: none;
+    margin: 8px auto;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.623);
+    transition: 0.3s;
+}
+
+li a:hover{
+    background-color: #5e5e5e1e;
+    color: #5e5e5e;
+    border: 1px solid #5e5e5e;
+    transition: 0.3s;
+}
+
+#socialmedia{
+    display: flex;
+    justify-content: center;
+    padding: 24px 0px;
+    font-size: 24px;
+}
+
+#socialmedia a{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+#socialmedia a:hover{
+    background-color: #5e5e5e6b;
+}
+
+footer{
+    padding: 24px 0px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #5e5e5e;
 }
