@@ -2,7 +2,7 @@
 
 @media (min-width: 768px){
     :root{
-        --bg-url: url(../assets/bg-desktop.jpg);
+        background: url(../assets/bg-desktop.jpg);
     }
     .light{
         background: url(../assets/bg-desktop-light.jpg);
@@ -59,7 +59,8 @@
 body{
     background: var(--bg-url) no-repeat top center/cover;
     /* background-attachment: fixed; */
-    height: 100vh;
+    height: 0vh;
+    
 }
 
 body *{
