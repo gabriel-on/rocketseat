@@ -13,6 +13,8 @@ function toggleMode() {
         img.setAttribute('src', '/discover/assets/avatar.png')
     }
 
+    //--------------------------------------------------
+
     // if(html.classList.contains('light')){
     //     html.classList.remove('light')
     // } else{
