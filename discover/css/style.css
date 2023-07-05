@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (min-width: 768px){
+@media (min-width: 768px){ /* ----------- :( */
     :root{
         background: url(../assets/bg-desktop.jpg);
     }
@@ -9,7 +9,8 @@
     }
 }
 
-/* ------------------------------------------ */
+/* ----------------------------------------- */
+
 @keyframes slide-in{
     from{
         left: 0;
@@ -28,13 +29,17 @@
         left: 0;
     }
 }
-/* ------------------------------------------- */
+
+/* ----------------------------------------- */
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/* ----------------------------------------- */
+
 
 :root{
     --text-color: white;
@@ -56,6 +61,8 @@
     --switch-bg-url: url(../assets/sun.svg);
 }
 
+/* ----------------------------------------- */
+
 body{
     background: var(--bg-url) no-repeat top center/cover;
     /* background-attachment: fixed; */
@@ -68,12 +75,16 @@ body *{
     font-family: 'Inter', sans-serif;
 }
 
+/* ----------------------------------------- */
+
 #container{
     width: 100%;
     max-width: 588px;
     margin: 15px auto 0px;
     padding: 0px 24px;
 }
+
+/* ----------------------------------------- */
 
 .profile{
     padding: 24px;
@@ -90,6 +101,8 @@ body *{
     width: 112px;
     margin: auto;
 }
+
+/* ----------------------------------------- */
 
 #switch{
     position: relative;
@@ -132,6 +145,8 @@ body *{
     height: 24px;
 }
 
+/* ----------------------------------------- */
+
 ul{
     list-style: none;
     padding: 24px 0px;
@@ -164,6 +179,8 @@ li a:hover{
     transition: 0.3s;
 }
 
+/* ----------------------------------------- */
+
 #socialmedia{
     display: flex;
     justify-content: center;
@@ -184,6 +201,8 @@ li a:hover{
 #socialmedia a:hover{
     background-color: var(--highlight-color);
 }
+
+/* ----------------------------------------- */
 
 footer{
     padding: 24px 0px;
