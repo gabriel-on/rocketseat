@@ -2,10 +2,10 @@
 
 @media (min-width: 700px){
     :root{
-        --bg-url: url(../discover/assets/bg-desktop.jpg);
+        --bg-url: url(/discover/assets/bg-desktop.jpg);
     }
     .light{
-        --bg-url: url(../discover/assets/bg-desktop-light.jpg);
+        --bg-url: url(/discover/assets/bg-desktop-light.jpg);
     }
 }
 
@@ -43,7 +43,7 @@
     --surface-color: #5e5e5e1e;
     --surface-color-hover: rgba(0, 0, 0, 0.2);
     --highlight-color: rgba(255, 255, 255, 0.2);
-    --switch-bg-url: url(../discover/assets/moon-stars.svg);
+    --switch-bg-url: url(/discover/assets/moon-stars.svg);
 }
 
 .light{
@@ -53,7 +53,7 @@
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(51, 50, 50, 0.2);
     --highlight-color: rgba(0, 0, 0, 0.1);
-    --switch-bg-url: url(../discover/assets/sun.svg);
+    --switch-bg-url: url(/discover/assets/sun.svg);
 }
 
 body{
