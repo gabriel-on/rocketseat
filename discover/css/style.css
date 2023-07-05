@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-@media (min-width: 800px){
+@media (min-width: 768px){
     :root{
         --bg-url: url(../assets/bg-desktop.jpg);
     }
     .light{
-        --bg-url: url(../assets/bg-desktop-light.jpg);
+        background: url(../assets/bg-desktop-light.jpg);
     }
 }
 
