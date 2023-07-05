@@ -13,12 +13,12 @@ function toggleMode() {
         img.setAttribute('src', '../discover/assets/avatar.png')
     }
 
-    //--------------------------------------------------
+    //-------------------DarkMode---------------------
 
     // if(html.classList.contains('light')){
     //     html.classList.remove('light')
     // } else{
     //     html.classList.add('light')
-    // }  <-------- Usar esse < ------- Esse DarkMode
+    // }  <-------- Usar esse
                         
 }
