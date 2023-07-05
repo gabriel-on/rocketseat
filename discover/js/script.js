@@ -17,6 +17,6 @@ function toggleMode() {
     //     html.classList.remove('light')
     // } else{
     //     html.classList.add('light')
-    // }  <-------- Usar esse ou < ------- Esse DarkMode
+    // }  <-------- Usar esse < ------- Esse DarkMode
                         
 }
