@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-0: #ffffff;
+    --cor-0: #;
+    --cor-0: #;
+
+    /* ------------------------------ */
+
+    /* --icon-git:;
+    --icon-git:;
+    --icon-git:; */
+}
+
+body{
+    background: var(--cor-0);
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+section{
+    max-width: 100%;
+}
+
+/* ------------------------------------------- */
+.foto-nome{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto-nome-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: column;
+}
+.foto-nome-item img{
+    border-radius: 50%;
+    width: 150px;
+}
+.foto-nome-item h2{
+    font-size: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------------------- */
+
+.link-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: column;
+    margin: auto;
+}
+
+.link-list ul > li{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+}
+.link-list a{
+    color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    justify-content: center;
+    width: 400px;
+    margin: 10px;
+}
+
+/* ------------------------------------------- */
+
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-links ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: auto;
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+.social-links ul > li{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.social-links a{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-links img{
+    color: #000000;
+    width: 24px;
+}
