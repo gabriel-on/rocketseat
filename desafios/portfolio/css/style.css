@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-0: #;
+    --color-1: #;
+    --color-2: #;
+    --color-3: #;
+    --color-4: #;
+}
+
+body{
+    background: var();
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------------MAIN--------------------- */
+
+.container-bg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'sider pro-top pro-top'
+    'sider1 my-pro my-pro'
+    'sider1 my-pro my-pro'
+    'sider2 p-rec p-rec'
+    'sider3 post post'
+    'sider4 . .';
+    margin: auto;
+    width: 1280px;
+    gap: 20px;
+}
+/* ----------------------------------------------- */
+
+.profile-top{
+    background: #4444;
+    grid-area: sider;
+}
+
+.sider-info{
+    background: #4444;
+    grid-area: sider1;
+    height: 10vh;
+}
+
+.sider-tech{
+    background: #4444;
+    grid-area: sider2;
+}
+
+.sider-expe{
+    background: #4444;
+    grid-area: sider3;
+}
+
+.sider-educ{
+    background: #4444;
+    grid-area: sider4;
+}
+
+/* ----------------------------------------------- */
+
+.project-container{
+    background: #4444;
+    grid-area: pro-top;
+}
+/* ----------------------------------------------- */
+
+.my-projects{
+    grid-area: my-pro;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-md-1{
+    background: #4444;
+    margin: 5px;
+    
+}
+
+.projects-md-2{
+    background: #4444;
+    margin: 5px;
+    
+}
+
+.projects-md-3{
+    background: #4444;
+    margin: 5px;
+    
+}
+
+.projects-md-4{
+    background: #4444;
+    margin: 5px;
+    
+}
+
+/* ----------------------------------------------- */
+
+.post-recent{
+    background: #4444;
+    grid-area: p-rec;
+}
+
+.post-000{
+    background: #4444;
+    grid-area: post;
+}
