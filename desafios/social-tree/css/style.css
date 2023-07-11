@@ -170,6 +170,6 @@ hr{
     border: 1px dashed var(--cor-4);
     border-radius: 5px;
     /* padding: 10px; */
-    width: 100%;
+    max-width: 400px;
     margin: auto;
 }
