@@ -165,3 +165,11 @@ footer a:hover{
     color: var(--cor-2);
     text-decoration: underline;
 }
+
+hr{
+    border: 1px dashed var(--cor-4);
+    border-radius: 5px;
+    /* padding: 10px; */
+    width: 400px;
+    margin: auto;
+}
