@@ -7,15 +7,9 @@
 }
 
 :root{
-    --cor-0: #ffffff;
-    --cor-0: #;
-    --cor-0: #;
-
-    /* ------------------------------ */
-
-    /* --icon-git:;
-    --icon-git:;
-    --icon-git:; */
+    --cor-0: #666666;
+    --cor-border: #8c00ff;
+    --cor-letra: #ffffff;
 }
 
 body{
@@ -25,6 +19,7 @@ body{
 
 section{
     max-width: 100%;
+    padding: 0px 24px;
 }
 
 /* ------------------------------------------- */
@@ -41,14 +36,18 @@ section{
     flex-direction: column;
 }
 .foto-nome-item img{
+    border: 2px solid var(--cor-border);
+    padding: 5px;
     border-radius: 50%;
-    width: 150px;
+    width: 180px;
 }
 .foto-nome-item h2{
+    color: var(--cor-letra);
     margin: 10px 0px;
     font-size: 1.2em;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* ------------------------------------------- */
@@ -56,6 +55,7 @@ section{
 .link-list{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .link-list ul{
@@ -69,20 +69,26 @@ section{
 
 .link-list ul > li{
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid var(--cor-border);
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     margin: 5px 0px;
+    text-transform: uppercase;
 }
 .link-list a{
     width: 100%;
     padding: 10px;
-    color: blueviolet;
+    color: var(--cor-letra);
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
     justify-content: center;
+}
+
+.link-list a:hover{
+    color: var(--cor-border);
+    background: var(--cor-0);
 }
 
 /* ------------------------------------------- */
@@ -90,6 +96,7 @@ section{
 .social-links{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .social-links ul{
@@ -118,4 +125,21 @@ section{
     font-size: 24px;
     display: flex;
     flex-wrap: wrap;
+}
+
+/* ------------------------------------------- */
+
+footer{
+    color: var(--cor-letra);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 1.2em;
+}
+
+footer a{
+    color: rgb(0, 158, 158);
+    text-decoration: none;
+    margin: 0px 5px;
 }
