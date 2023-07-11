@@ -7,13 +7,15 @@
 }
 
 :root{
-    --cor-0: #666666;
-    --cor-border: #8c00ff;
-    --cor-letra: #ffffff;
+    --cor-0: #350058;
+    --cor-1: #3d1579;
+    --cor-2: #4E00C6;
+    --cor-3: #6400FA;
+    --cor-4: #914BFB;
 }
 
 body{
-    background: var(--cor-0);
+    background:linear-gradient(to right, #12001f, #44007c);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
@@ -36,13 +38,13 @@ section{
     flex-direction: column;
 }
 .foto-nome-item img{
-    border: 2px solid var(--cor-border);
+    border: 2px solid var(--cor-4);
     padding: 5px;
     border-radius: 50%;
     width: 180px;
 }
 .foto-nome-item h2{
-    color: var(--cor-letra);
+    color: var(--cor-4);
     margin: 10px 0px;
     font-size: 1.2em;
     display: flex;
@@ -68,27 +70,31 @@ section{
 }
 
 .link-list ul > li{
-    justify-content: center;
-    border: 2px solid var(--cor-border);
-    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 5px 0px;
     text-transform: uppercase;
 }
 .link-list a{
-    width: 100%;
-    padding: 10px;
-    color: var(--cor-letra);
+    backdrop-filter: blur(100px);
+    border-radius: 5px;
+    border: 2px solid var(--cor-4);
+    color: var(--cor-4);
     display: flex;
     flex-wrap: wrap;
-    text-decoration: none;
     justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 100%;
 }
 
 .link-list a:hover{
-    color: var(--cor-border);
-    background: var(--cor-0);
+    color: var(--cor-2);
+    backdrop-filter: blur(100px);
+    border: 2px solid var(--cor-1);
+
 }
 
 /* ------------------------------------------- */
@@ -115,22 +121,33 @@ section{
 }
 
 .social-links a{
+    color: var(--cor-4);
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
 }
 
 .social-links a > i{
-    color: #000000;
     font-size: 24px;
     display: flex;
     flex-wrap: wrap;
+
+}
+
+.social-links a:hover{
+    color: #ffffff;
+    background: var(--cor-2);
+    backdrop-filter: blur(100px);
+    transition: 0.3s;
 }
 
 /* ------------------------------------------- */
 
 footer{
-    color: var(--cor-letra);
+    color: #e7e7e7;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -139,7 +156,12 @@ footer{
 }
 
 footer a{
-    color: rgb(0, 158, 158);
+    color: var(--cor-4);
     text-decoration: none;
     margin: 0px 5px;
+}
+
+footer a:hover{
+    color: var(--cor-2);
+    text-decoration: underline;
 }
