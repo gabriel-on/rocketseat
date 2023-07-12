@@ -23,40 +23,109 @@ body{
 
 .container-bg{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-rows: 2fr 3fr 3fr;
     grid-template-areas: 
     'sider pro-top pro-top'
-    'sider1 my-pro my-pro'
-    'sider1 my-pro my-pro'
-    'sider2 p-rec p-rec'
-    'sider3 post post'
+    /* 'sider my-pro my-pro' */
+    'sider proj1 proj2'
+    'sider proj3 proj4'
+    'sider1 p-rec p-rec'
+    'sider1 post post'
+    'sider2 . .'
+    'sider3 . .'
     'sider4 . .';
     margin: auto;
     width: 1280px;
     gap: 20px;
 }
-/* ----------------------------------------------- */
+
+/* ----------------------PERFIL-------------------- */
 
 .profile-top{
     background: #4444;
     grid-area: sider;
+    width: 100%;
+    height: 40vh;
 }
+
+.profile-top div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-top div > img{
+    border-radius: 50%;
+    width: 150px;
+    margin: 20px;
+}
+
+.profile-top div > h2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.profile-top div > p{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ------------------INFOMACÕES----------------- */
 
 .sider-info{
     background: #4444;
     grid-area: sider1;
-    height: 10vh;
+    /* height: 10vh; */
 }
+
+.sider-info div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+
+.sider-info > div > .item-loc a{
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px;
+}
+
+div .item-loc > a i{
+    font-size: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 5px;
+}
+
+div .item-loc > a p{
+    font-size: 0.8em;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 5px;
+}
+
+/* --------------------------------------------- */
 
 .sider-tech{
     background: #4444;
     grid-area: sider2;
 }
 
+/* --------------------------------------------- */
+
 .sider-expe{
     background: #4444;
     grid-area: sider3;
 }
+
+/* --------------------------------------------- */
 
 .sider-educ{
     background: #4444;
@@ -68,39 +137,47 @@ body{
 .project-container{
     background: #4444;
     grid-area: pro-top;
+    /* height: 100vh; */
 }
+
 /* ----------------------------------------------- */
 
-.my-projects{
+/* .my-projects{
     grid-area: my-pro;
-}
+} */
 
-.projects{
+/* .projects{
     display: flex;
     flex-wrap: wrap;
-}
+    width: 100%;
+    height: 100%;
+} */
 
 .projects-md-1{
     background: #4444;
-    margin: 5px;
+    grid-area: proj1;
+    /* margin: 5px; */
     
 }
 
 .projects-md-2{
     background: #4444;
-    margin: 5px;
+    grid-area: proj2;
+    /* margin: 5px; */
     
 }
 
 .projects-md-3{
     background: #4444;
-    margin: 5px;
+    grid-area: proj3;
+    /* margin: 5px; */
     
 }
 
 .projects-md-4{
     background: #4444;
-    margin: 5px;
+    grid-area: proj4;
+    /* margin: 5px; */
     
 }
 
@@ -109,6 +186,7 @@ body{
 .post-recent{
     background: #4444;
     grid-area: p-rec;
+    height: 10vh;
 }
 
 .post-000{
