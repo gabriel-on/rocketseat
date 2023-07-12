@@ -31,7 +31,8 @@ body{
     'sider proj1 proj2'
     'sider proj3 proj4'
     'sider1 p-rec p-rec'
-    'sider1 post post'
+    'sider1 post1 post1'
+    'sider1 post2 post2'
     'sider2 . .'
     'sider3 . .'
     'sider4 . .';
@@ -78,7 +79,9 @@ body{
 .sider-info{
     background: #4444;
     grid-area: sider1;
-    /* height: 10vh; */
+    display: flex;
+    max-height: 380px;
+    align-items: center;
 }
 
 .sider-info div{
@@ -116,6 +119,8 @@ div .item-loc > a p{
 .sider-tech{
     background: #4444;
     grid-area: sider2;
+    display: flex;
+    height: 200px;
 }
 
 /* --------------------------------------------- */
@@ -123,6 +128,8 @@ div .item-loc > a p{
 .sider-expe{
     background: #4444;
     grid-area: sider3;
+    display: flex;
+    height: 200px;
 }
 
 /* --------------------------------------------- */
@@ -130,6 +137,8 @@ div .item-loc > a p{
 .sider-educ{
     background: #4444;
     grid-area: sider4;
+    display: flex;
+    height: 200px;
 }
 
 /* ----------------------------------------------- */
@@ -186,10 +195,16 @@ div .item-loc > a p{
 .post-recent{
     background: #4444;
     grid-area: p-rec;
-    height: 10vh;
+    height: 5vh;
 }
 
 .post-000{
     background: #4444;
-    grid-area: post;
+    grid-area: post1;
+    height: 20vh;
+}
+.post-001{
+    background: #4444;
+    grid-area: post2;
+    height: 20vh;
 }
