@@ -36,7 +36,7 @@ body{
     'sider2 . .'
     'sider3 . .'
     'sider4 . .';
-    margin: auto;
+    margin: 20px auto;
     width: 1280px;
     gap: 20px;
 }
@@ -80,7 +80,7 @@ body{
     background: #4444;
     grid-area: sider1;
     display: flex;
-    max-height: 380px;
+    /* max-height: 380px; */
     align-items: center;
 }
 
