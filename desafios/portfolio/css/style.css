@@ -175,6 +175,8 @@ div .item-loc > a p{
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    max-width: 100%;
+    justify-content: center;
 }
 
 .inter p{
@@ -198,7 +200,7 @@ div .item-loc > a p{
     display: flex;
     flex-wrap: wrap;
     /* height: 200px; */
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .sider-expe h2{
@@ -214,7 +216,7 @@ div .item-loc > a p{
 }
 
 .sider-expe > div ul{
-    margin: 10px;
+    margin: 10px 20px;
 }
 
 .sider-expe > div > ul li{
@@ -227,13 +229,46 @@ div .item-loc > a p{
     font-size: 0.8em;
 }
 
-/* --------------------------------------------- */
+/* -------------------EDUCAÇÃO-------------------- */
 
 .sider-educ{
     background: #4444;
     grid-area: sider4;
     display: flex;
-    height: 200px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.sider-educ h2{
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.sider-educ > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sider-educ > div ul{
+    margin: 10px 20px;
+}
+
+.sider-educ > div > ul li{
+    margin: 10px;
+}
+
+.sider-educ > div > ul > li p{
+    color: #353535;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.sider-educ > div > ul > li h5{
+    color: #353535;
+    text-transform: uppercase;
+    font-size: 0.8em;
 }
 
 /* ----------------------------------------------- */
