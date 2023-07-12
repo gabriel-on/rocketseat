@@ -114,22 +114,117 @@ div .item-loc > a p{
     margin: 0px 5px;
 }
 
-/* --------------------------------------------- */
+/* -------------------TECNOLOGIAS-------------------------- */
 
 .sider-tech{
     background: #4444;
     grid-area: sider2;
     display: flex;
-    height: 200px;
+    flex-wrap: wrap;
+    /* height: 200px; */
+    /* flex-direction: column;*/
+    justify-content: center; 
 }
 
-/* --------------------------------------------- */
+.sider-tech h2{
+    /* color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.sider-tech > div{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    /* width: 300px; */
+}
+
+.sider-tech > div h3{
+    text-transform: uppercase;
+    color: blueviolet;
+}
+
+.estud{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.estud p{
+    border-radius: 5px;
+    background: black;
+    color: white;
+    display: flex;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+}
+
+.inter{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.inter p{
+    border-radius: 5px;
+    background: black;
+    color: white;
+    display: flex;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+}
+
+/* -----------------EXPERIENCIA----------------- */
 
 .sider-expe{
     background: #4444;
     grid-area: sider3;
     display: flex;
-    height: 200px;
+    flex-wrap: wrap;
+    /* height: 200px; */
+    justify-content: center;
+}
+
+.sider-expe h2{
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.sider-expe > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sider-expe > div ul{
+    margin: 10px;
+}
+
+.sider-expe > div > ul li{
+    margin: 10px;
+}
+
+.sider-expe > div > ul > li p{
+    color: #353535;
+    text-transform: uppercase;
+    font-size: 0.8em;
 }
 
 /* --------------------------------------------- */
