@@ -31,11 +31,10 @@ body{
     'sider proj1 proj2'
     'sider proj3 proj4'
     'sider1 p-rec p-rec'
-    'sider1 post1 post1'
-    'sider1 post2 post2'
-    'sider2 . .'
-    'sider3 . .'
-    'sider4 . .';
+    'sider1 cont cont'
+    'sider2 cont cont'
+    'sider3 cont cont'
+    'sider4 cont cont';
     margin: 20px auto;
     width: 1280px;
     gap: 20px;
@@ -59,8 +58,9 @@ body{
 
 .profile-top div > img{
     border-radius: 50%;
-    width: 150px;
+    outline: 2px solid rgb(250, 0, 0);
     margin: 20px;
+    width: 150px;
 }
 
 .profile-top div > h2{
@@ -271,12 +271,26 @@ div .item-loc > a p{
     font-size: 0.8em;
 }
 
-/* ----------------------------------------------- */
+/* ------------------MEUS-PROJETOS---------------- */
 
 .project-container{
+    align-items: center;
     background: #4444;
     grid-area: pro-top;
-    /* height: 100vh; */
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+}
+
+.project{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project a{
+    color: #353535;
+    text-decoration: none;
 }
 
 /* ----------------------------------------------- */
@@ -323,18 +337,71 @@ div .item-loc > a p{
 /* ----------------------------------------------- */
 
 .post-recent{
+    align-items: center;
     background: #4444;
     grid-area: p-rec;
-    height: 5vh;
+    display: flex;
+    height: 8vh;
 }
 
-.post-000{
-    background: #4444;
-    grid-area: post1;
-    height: 20vh;
+.post-item h2{
+    margin: 10px;
 }
-.post-001{
+
+/* ----------------------------------------------- */
+
+.post-container{
+    grid-area: cont;
+}
+
+.post-rec{
+    display: flex;
+    flex-wrap: wrap;
     background: #4444;
-    grid-area: post2;
-    height: 20vh;
+    width: 100%;
+    margin-bottom: 20px;
+    /* height: 20vh; */
+}
+
+.post-rec img{
+    border-radius: 50%;
+    width: 150px;
+    margin: 20px;
+}
+
+.post-rec > div{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    padding: 20px 0px;
+}
+
+.post-rec > div h3{
+    color: #a12727;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+}
+
+.post-rec > div small{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.post-rec > div p{
+    color: #5a0d0d;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.hashtag{
+    /* background: #353535; */
+    margin: 5px;
+    color: #201d1d;
+    display: flex;
+    flex-wrap: wrap;
 }
