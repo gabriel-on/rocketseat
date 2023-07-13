@@ -27,9 +27,8 @@ body{
     grid-template-rows: 2fr 3fr 3fr;
     grid-template-areas: 
     'sider pro-top pro-top'
-    /* 'sider my-pro my-pro' */
-    'sider proj1 proj2'
-    'sider proj3 proj4'
+    'sider my-pro .'
+    'sider . .'
     'sider1 p-rec p-rec'
     'sider1 cont cont'
     'sider2 cont cont'
@@ -295,43 +294,77 @@ div .item-loc > a p{
 
 /* ----------------------------------------------- */
 
-/* .my-projects{
+.my-projects{
     grid-area: my-pro;
-} */
+}
 
-/* .projects{
+.projects-md{
+    background: #4444; 
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-} */
-
-.projects-md-1{
-    background: #4444;
-    grid-area: proj1;
-    /* margin: 5px; */
-    
+    text-decoration: none;
+    /* padding: 10px; */
+    justify-content: space-between;
 }
 
-.projects-md-2{
-    background: #4444;
-    grid-area: proj2;
-    /* margin: 5px; */
-    
+.projects-md p{
+    text-align: justify;
+    margin: 5px 10px;
 }
 
-.projects-md-3{
-    background: #4444;
-    grid-area: proj3;
-    /* margin: 5px; */
-    
+.projects-md > div{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.projects-md-4{
-    background: #4444;
-    grid-area: proj4;
-    /* margin: 5px; */
-    
+.folder-pro{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.folder-pro i{
+    color: #474747;
+    font-size: 1.6em;
+    margin: 10px;
+}
+
+.folder-pro h3{
+    align-content: center;
+    color: red;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.icon-item{
+    padding: 10px;
+}
+
+.icon-item i {
+    font-size: 1em;
+    color: #474747;
+}
+
+.icon-item p{
+    margin: 0px 5px;
+}
+
+.tecno{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.tecno p{
+    margin: 0px;
+    color: #353535;
+}
+
+.tecno p::before{
+    color: yellow;
+    content: '';
+    border-radius: 50%;
+    padding: 10px;
 }
 
 /* ----------------------------------------------- */
