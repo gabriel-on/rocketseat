@@ -480,3 +480,16 @@ div .item-loc > a p{
     display: flex;
     flex-wrap: wrap;
 }
+
+/* ----------------------------------------------- */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+}
+
+footer a{
+    margin: 0px 0px 0px 5px;
+}
