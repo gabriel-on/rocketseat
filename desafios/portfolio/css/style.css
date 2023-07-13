@@ -7,15 +7,29 @@
 }
 
 :root{
-    --color-0: #;
-    --color-1: #;
-    --color-2: #;
-    --color-3: #;
-    --color-4: #;
+    --color-0: #0f0131;
+    --color-1: #3900BD;
+    --color-2: #4600F0;
+    --color-3: #7C49F2;
+    --color-4: #392270;
+    --box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.76);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--color-3);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--color-4);
 }
 
 body{
-    background: var();
+    background: var(--color-0);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -43,10 +57,14 @@ body{
 /* ----------------------PERFIL-------------------- */
 
 .profile-top{
-    background: #4444;
+    background: var(--color-4);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
     grid-area: sider;
+    display: flex;
     width: 100%;
-    /* height: 40vh; */
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-top div{
@@ -58,18 +76,20 @@ body{
 
 .profile-top div > img{
     border-radius: 50%;
-    outline: 2px solid rgb(250, 0, 0);
-    margin: 20px;
+    outline: 2px solid var(--color-3);
+    /* margin: 20px 0px; */
     width: 150px;
 }
 
 .profile-top div > h2{
+    color: var(--color-3);
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 20px;
 }
 
 .profile-top div > p{
+    color: var(--color-1);
     display: flex;
     flex-wrap: wrap;
 }
@@ -77,10 +97,11 @@ body{
 /* ------------------INFOMACÕES----------------- */
 
 .sider-info{
-    background: #4444;
+    background: var(--color-4);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
     grid-area: sider1;
     display: flex;
-    /* max-height: 380px; */
     align-items: center;
 }
 
@@ -92,6 +113,7 @@ body{
 }
 
 .sider-info > div > .item-loc a{
+    color: var(--color-3);
     text-decoration: none;
     align-items: center;
     display: flex;
@@ -117,17 +139,17 @@ div .item-loc > a p{
 /* -------------------TECNOLOGIAS-------------------------- */
 
 .sider-tech{
-    background: #4444;
+    background: var(--color-4);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
     grid-area: sider2;
     display: flex;
     flex-wrap: wrap;
-    /* height: 200px; */
-    /* flex-direction: column;*/
     justify-content: center; 
 }
 
 .sider-tech h2{
-    /* color: aqua; */
+    color: var(--color-3);
     display: flex;
     flex-wrap: wrap;
     text-transform: uppercase;
@@ -138,16 +160,14 @@ div .item-loc > a p{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-    /* width: 300px; */
 }
 
 .sider-tech > div h3{
     text-transform: uppercase;
-    color: blueviolet;
+    color: var(--color-2);
 }
 
 .estud{
@@ -161,7 +181,7 @@ div .item-loc > a p{
 .estud p{
     border-radius: 5px;
     background: black;
-    color: white;
+    color: var(--color-3);
     display: flex;
     font-size: 0.8em;
     flex-wrap: wrap;
@@ -182,7 +202,7 @@ div .item-loc > a p{
 .inter p{
     border-radius: 5px;
     background: black;
-    color: white;
+    color: var(--color-3);
     display: flex;
     font-size: 0.8em;
     flex-wrap: wrap;
@@ -195,15 +215,16 @@ div .item-loc > a p{
 /* -----------------EXPERIENCIA----------------- */
 
 .sider-expe{
-    background: #4444;
+    background: var(--color-4);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
     grid-area: sider3;
     display: flex;
     flex-wrap: wrap;
-    /* height: 200px; */
-    /* justify-content: center; */
 }
 
 .sider-expe h2{
+    color: var(--color-3);
     display: flex;
     flex-wrap: wrap;
     text-transform: uppercase;
@@ -220,11 +241,12 @@ div .item-loc > a p{
 }
 
 .sider-expe > div > ul li{
+    color: var(--color-3);
     margin: 10px;
 }
 
 .sider-expe > div > ul > li p{
-    color: #353535;
+    color: var(--color-1);
     text-transform: uppercase;
     font-size: 0.8em;
 }
@@ -232,7 +254,9 @@ div .item-loc > a p{
 /* -------------------EDUCAÇÃO-------------------- */
 
 .sider-educ{
-    background: #4444;
+    background: var(--color-4);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
     grid-area: sider4;
     display: flex;
     flex-wrap: wrap;
@@ -240,6 +264,7 @@ div .item-loc > a p{
 }
 
 .sider-educ h2{
+    color: var(--color-3);
     display: flex;
     flex-wrap: wrap;
     text-transform: uppercase;
@@ -256,17 +281,18 @@ div .item-loc > a p{
 }
 
 .sider-educ > div > ul li{
+    color: var(--color-3);
     margin: 10px;
 }
 
 .sider-educ > div > ul > li p{
-    color: #353535;
+    color: var(--color-1);
     text-transform: uppercase;
     font-size: 0.8em;
 }
 
 .sider-educ > div > ul > li h5{
-    color: #353535;
+    color: var(--color-1);
     text-transform: uppercase;
     font-size: 0.8em;
 }
@@ -275,11 +301,13 @@ div .item-loc > a p{
 
 .project-container{
     align-items: center;
-    background: #4444;
+    background: var(--color-4);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
     grid-area: pro-top;
     display: flex;
     justify-content: space-between;
-    /* height: 8vh; */
+    height: 10vh;
 }
 
 .project{
@@ -288,8 +316,12 @@ div .item-loc > a p{
     flex-wrap: wrap;
 }
 
+.project h2{
+    color: var(--color-3);
+}
+
 .project a{
-    color: #353535;
+    color: var(--color-1);
     text-decoration: none;
 }
 
@@ -304,18 +336,19 @@ div .item-loc > a p{
 }
 
 .projects-md{
-    background: #4444; 
+    background: var(--color-4);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
     width: 465px;
     height: 25vh;
     justify-content: space-between;
-    /* margin: 0px 10px 0px 10px; */
 }
 
 .projects-md p{
-    color: #474747;
+    color: var(--color-1);
     text-align: justify;
     margin: 5px 10px;
 }
@@ -332,14 +365,14 @@ div .item-loc > a p{
 }
 
 .folder-pro i{
-    color: #474747;
+    color: var(--color-3);
     font-size: 1.6em;
     margin: 10px;
 }
 
 .folder-pro h3{
     align-content: center;
-    color: red;
+    color:var(--color-3);
     display: flex;
     flex-wrap: wrap;
     margin: 10px 0px;
@@ -352,11 +385,11 @@ div .item-loc > a p{
 
 .icon-item i {
     font-size: 1em;
-    color: #474747;
+    color: var(--color-3);
 }
 
 .icon-item p{
-    color: #58007a;
+    color: var(--color-2);
     margin: 0px 5px;
 }
 
@@ -371,7 +404,7 @@ div .item-loc > a p{
     display: flex;
     flex-wrap: wrap;
     margin: 0px;
-    color: #353535;
+    color: var(--color-2);
 }
 
 .tecno .tec-p-1::before{
@@ -412,13 +445,16 @@ div .item-loc > a p{
 
 .post-recent{
     align-items: center;
-    background: #4444;
+    background: var(--color-4);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
     grid-area: p-rec;
     display: flex;
-    height: 8vh;
+    height: 10vh;
 }
 
 .post-item h2{
+    color: var(--color-3);
     margin: 10px;
 }
 
@@ -429,17 +465,19 @@ div .item-loc > a p{
 }
 
 .post-rec{
+    background: var(--color-4);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
     display: flex;
     flex-wrap: wrap;
-    background: #4444;
-    width: 100%;
-    margin-bottom: 20px;
-    /* height: 20vh; */
     text-decoration: none;
+    margin-bottom: 20px;
+    width: 100%;
+    /* height: 20vh; */
 }
 
 .post-rec img{
-    border-radius: 50%;
+    border-radius: 10px;
     width: 150px;
     margin: 20px;
 }
@@ -453,13 +491,14 @@ div .item-loc > a p{
 }
 
 .post-rec > div h3{
-    color: #a12727;
+    color: var(--color-3);
     display: flex;
     flex-wrap: wrap;
     margin: 5px 0px;
 }
 
 .post-rec > div small{
+    color: var(--color-2);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -467,23 +506,29 @@ div .item-loc > a p{
 }
 
 .post-rec > div p{
-    color: #5a0d0d;
+    color: var(--color-1);
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
 }
 
 .hashtag{
-    /* background: #353535; */
-    margin: 5px;
-    color: #201d1d;
+    background: var(--color-0);
+    color: var(--color-2);
     display: flex;
+    border-radius: 5px;
     flex-wrap: wrap;
+    font-size: 0.8em;
+    margin: 5px 5px 0px 0px;
+    padding: 4px;
 }
 
 /* ----------------------------------------------- */
 
 footer{
+    color: var(--color-1);
+    background: var(--color-4);
+    border-top: 2px solid var(--color-3);
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
@@ -491,5 +536,7 @@ footer{
 }
 
 footer a{
+    color: var(--color-3);
+    text-decoration: none;
     margin: 0px 0px 0px 5px;
 }
