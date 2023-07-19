@@ -4,7 +4,7 @@
     .container-bg{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 5fr 1fr;
+        grid-template-rows: 2fr 0fr 4fr;
         grid-template-areas: 
         'sider'
         'pro-top'
@@ -28,6 +28,9 @@
         max-width: 450px;
         align-items: center;
         justify-content: center;
+        /* height: 100vh; */
+        /* padding: 20px; */
+        /* margin: 0px auto; */
     }
     
     /* -------------------------- */
