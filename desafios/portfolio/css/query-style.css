@@ -51,6 +51,7 @@
         display: flex;
         grid-area: sider3;
         max-width: 450px;
+        flex-direction: column;
 
     }
 
@@ -58,6 +59,7 @@
         display: flex;
         grid-area: sider4;
         max-width: 450px;
+        flex-direction: column;
 
     }
 
