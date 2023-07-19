@@ -45,6 +45,7 @@
 
     .sider-tech{
         display: flex;
+        flex-wrap: wrap;
         grid-area: sider2;
         max-width: 450px;
         /* flex-direction: column; */
