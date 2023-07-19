@@ -53,6 +53,10 @@
 
     }
 
+    .sider-tech > div{
+        display: flex;
+    }
+
     .sider-expe{
         display: flex;
         grid-area: sider3;
