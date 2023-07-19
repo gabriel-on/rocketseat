@@ -96,6 +96,24 @@
 
     }
 
+    .post-rec{
+        align-items: flex-start;
+        display: flex;
+        padding: 10px;
+    }
+
+    .post-rec img{
+        display: flex;
+        border-radius: 10px;
+        width: 100px;
+        margin: 20px;
+    }
+
+    .post-rec > div{
+        display: flex;
+        flex: 1 1 200px;
+    }
+
     
     footer{
         min-width: 450px;
