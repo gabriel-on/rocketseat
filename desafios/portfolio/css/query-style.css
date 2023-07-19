@@ -15,7 +15,7 @@
         'sider2'
         'sider3'
         'sider4';
-        max-width: 500px;
+        max-width: 450px;
         margin: 20px auto;
         gap: 20px;
     }
@@ -25,7 +25,7 @@
     .profile-top{
         grid-area: sider;
         display: flex;
-        max-width: 500px;
+        max-width: 450px;
         align-items: center;
         justify-content: center;
     }
@@ -36,42 +36,42 @@
         grid-area: sider1;
         display: flex;
         align-items: center;
-        max-width: 500px;
+        max-width: 450px;
 
     }
 
     .sider-tech{
         display: flex;
         grid-area: sider2;
-        max-width: 500px;
+        max-width: 450px;
 
     }
 
     .sider-expe{
         display: flex;
         grid-area: sider3;
-        max-width: 500px;
+        max-width: 450px;
 
     }
 
     .sider-educ{
         display: flex;
         grid-area: sider4;
-        max-width: 500px;
+        max-width: 450px;
 
     }
 
     .project-container{
         display: flex;
         grid-area: pro-top;
-        max-width: 500px;
+        max-width: 450px;
 
     }
 
     .my-projects{
         display: flex;
         grid-area: my-pro;
-        max-width: 500px;
+        max-width: 450px;
         justify-content: center;
 
     }
@@ -79,7 +79,7 @@
     .post-recent{
         display: flex;
         grid-area: p-rec;
-        max-width: 500px;
+        max-width: 450px;
 
     }
 
@@ -87,7 +87,7 @@
         display: flex;
         flex-direction: column;
         grid-area: cont;
-        max-width: 500px;
+        max-width: 450px;
 
     }
 
