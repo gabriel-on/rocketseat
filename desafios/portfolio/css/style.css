@@ -343,7 +343,7 @@ div .item-loc > a p{
     flex-wrap: wrap;
     text-decoration: none;
     width: 465px;
-    height: 25vh;
+    /* height: 25vh; */
     justify-content: space-between;
 }
 
