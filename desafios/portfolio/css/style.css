@@ -409,7 +409,7 @@ div .item-loc > a p{
 
 .tecno .tec-p-1::before{
     content: '';
-    background: #00aeff;
+    background: #ff9900;
     border: 1px solid black;
     border-radius: 50%;
     display: flex;
@@ -420,7 +420,7 @@ div .item-loc > a p{
 }
 .tecno .tec-p-2::before{
     content: '';
-    background: #ff9900;
+    background: #00aeff;
     border: 1px solid black;
     border-radius: 50%;
     display: flex;
