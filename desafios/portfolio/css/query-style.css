@@ -90,4 +90,10 @@
         max-width: 500px;
 
     }
+
+    footer{
+        display: flex;
+        width: 100%;
+    }
+    
 }
