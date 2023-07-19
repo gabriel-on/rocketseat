@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    .container-bg{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr 1fr;
+        grid-template-areas: 
+        'sider'
+        'pro-top'
+        'my-pro'
+        'p-rec'
+        'cont'
+        'sider1'
+        'sider2'
+        'sider3'
+        'sider4';
+        max-width: 500px;
+        margin: 20px auto;
+        gap: 20px;
+    }
+
+    /* -------------------------- */
+    
+    .profile-top{
+        grid-area: sider;
+        display: flex;
+        max-width: 500px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* -------------------------- */
+
+    .sider-info{
+        grid-area: sider1;
+        display: flex;
+        align-items: center;
+        max-width: 500px;
+
+    }
+
+    .sider-tech{
+        display: flex;
+        grid-area: sider2;
+        max-width: 500px;
+
+    }
+
+    .sider-expe{
+        display: flex;
+        grid-area: sider3;
+        max-width: 500px;
+
+    }
+
+    .sider-educ{
+        display: flex;
+        grid-area: sider4;
+        max-width: 500px;
+
+    }
+
+    .project-container{
+        display: flex;
+        grid-area: pro-top;
+        max-width: 500px;
+
+    }
+
+    .my-projects{
+        display: flex;
+        grid-area: my-pro;
+        max-width: 500px;
+        justify-content: center;
+
+    }
+
+    .post-recent{
+        display: flex;
+        grid-area: p-rec;
+        max-width: 500px;
+
+    }
+
+    .post-container{
+        display: flex;
+        flex-direction: column;
+        grid-area: cont;
+        max-width: 500px;
+
+    }
+}
