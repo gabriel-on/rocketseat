@@ -47,6 +47,8 @@
         display: flex;
         grid-area: sider2;
         max-width: 450px;
+        /* flex-direction: column; */
+        justify-content: center;
 
     }
 
